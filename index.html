@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Sunday Abeng - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar" id="navbar">
+        <div class="logo">Abeng Gift S.</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <style>
+            .contact-btn {
+                background: linear-gradient(90deg, #233b52 0%, #ffd700 100%);
+                border: none;
+                color: #fff;
+                font-weight: 900;
+                padding: 12px 28px;
+                border-radius: 30px;
+                text-decoration: none;
+                font-size: 1.08rem;
+                letter-spacing: 1px;
+                box-shadow: 0 4px 18px rgba(13, 110, 253, 0.10);
+                cursor: pointer;
+                outline: none;
+                transition:
+                    background 0.3s,
+                    color 0.3s,
+                    box-shadow 0.3s,
+                    transform 0.2s;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .contact-btn::before {
+                content: "";
+                position: absolute;
+                left: -75%;
+                top: 0;
+                width: 50%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.15);
+                transform: skewX(-20deg);
+                transition: left 0.4s;
+            }
+
+            .contact-btn:hover::before {
+                left: 120%;
+            }
+
+            .contact-btn:hover {
+                /* background: linear-gradient(90deg, #0d6efd 0%, #233b52 100%); */
+                background: linear-gradient(90deg, #ffd600 0%, #233b52 100%);
+                color: #f2f2f2f2;
+                box-shadow: 0 6px 24px rgba(13, 110, 253, 0.18);
+                transform: translateY(-3px) scale(1.06);
+            }
+
+            .contact-btn:active {
+                transform: scale(0.98);
+                box-shadow: 0 2px 8px rgba(13, 110, 253, 0.10);
+            }
+
+            @media (max-width: 600px) {
+                .contact-btn {
+                    padding: 10px 16px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+
+            <!-- <a href="#certificates">Certification</a> -->
+
+        </nav>
+        <!-- <div> <button onclick="window.location.href='#contact'" class="contact-btn" type="button">Contact Me</button>
+        </div> -->
+    </div>
+
+    <div class="container text-center spaceTop" style="margin-top: 10%;" id="about" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+        <div class="intro-text">
+            hi, <span class="name"> gift </span> here.<span class="blinking-cursor">|</span>
+        </div>
+        <div style="font-weight:600;">
+            <h5 class="tagline">I Create Stuff Always</h5>
+            <p class="description">
+                I'm a software engineer from Nigeria, Port Harcourt River state.
+                I'm fascinated by large-scale, high-impact products and have contributed
+                to major feature launches in industry-leading services as well as apps
+                that have 200+ installs.
+            </p>
+        </div>
+        <div class="mt-4">
+            <a href="mailto:sundaygift34@gmail.com" type="button" class="say-hi-btn"
+                style="text-decoration: none; font-weight: 700;">
+                <i class="fas fa-envelope"></i> Say hi!
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- HEADER SECTION -->
+    <div class="header" id="home" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+        <div class="left">
+            <img src="gift sunday abeng img1.jpg" alt="Gift Sunday Abeng" class="profile-img"
+                id="profileImage" />
+        </div>
+
+
+        <div class="right">
+            <!-- <h1 class="name">Hi, I'm <span>Gift Sunday Abeng</span></h1> -->
+
+            <style>
+                .section-header {
+                    display: flex;
+                    align-items: center;
+                    margin: 30px 0;
+                }
+
+                .slash {
+                    font-weight: bold;
+                    font-size: 1.30rem;
+                    margin-right: 8px;
+                    color: #ecf0f1;
+                }
+
+                .about-me {
+                    font-weight: bold;
+                    font-size: 1.30rem;
+                    margin: 0 15px 0 0;
+                    white-space: nowrap;
+                    color: #ecf0f1;
+                }
+
+                .line {
+                    flex: 1;
+                    height: 2px;
+                    background-color: var(--white);
+                    max-width: 250px !important;
+                }
+            </style>
+
+            <div class="section-header" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+                <span class="slash">/</span>
+                <p class="about-me">About Me</p>
+                <div class="line"></div>
+            </div>
+
+            <p class="intro" style="color: #5d6d7e;" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
+                I'm a Software Development Engineer at Luzoma Microsystems, where I design and build innovative software
+                solutions. I also hold an IBM certification, which reflects my commitment to industry standards and
+                technical excellence in full-stack development.
+            </p>
+            <p class="email"><span id="emailText"></span></p>
+
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" class="my_skills" style="font-weight: 700; color: #5d6d7e">Here are some technologies I have been
+                working with:</div>
+            <div class="skills-container" style="margin: 24px 0;">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">Bootstrap</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">jQuery</div>
+                <div class="skill">PHP</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Node.js &amp; Express</div>
+            </div>
+            <style>
+                .skills-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    margin-bottom: 18px;
+                }
+
+
+
+                .skill:hover {
+                    transform: translateY(-2px) scale(1.05);
+                    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.16);
+                }
+
+                @media (max-width: 600px) {
+                    .skills-container {
+                        gap: 8px;
+                    }
+
+                    .skill {
+                        font-size: 0.95rem;
+                        padding: 7px 12px;
+                    }
+                }
+            </style>
+
+            <div class="buttons">
+                <a style="font-weight: 700; color: #5d6d7e" href="#contact" class="btn">Hire Me</a>
+                <a style="font-weight: 700; color: #5d6d7e" href="your_cv.pdf" download class="btn btn-outline">Download
+                    CV</a>
+            </div>
+            <!-- <img src="./img/" alt=""> -->
+
+            <div class="socials">
+                <a href="https://github.com/giftsunni" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abeng-gift-sunday-0a3180322" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:sunday@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Section Header Styles */
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .slash {
+            color: #ecf0f1;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-right: 10px;
+            line-height: 1;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin: 0 15px 0 0;
+            text-align: left;
+            line-height: 1;
+        }
+
+        .section-title span,
+        .section-title {
+            color: #ecf0f1;
+        }
+
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ddd;
+            /* Light line color */
+            position: relative;
+            top: 2px;
+        }
+
+        .services-section {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <section class="services-section" id="projects" data-aos="fade-up" data-aos-duration="1100">
+        <div class="section-header">
+            <span class="slash">/</span>
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="line"></div>
+        </div>
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa fa-church service-icon ii"></i>
+                <h3>Church Application</h3>
+                <p>Developed a full-featured church app with website using JavaScript, Bootstrap, PHP, MySQL and
+                    Node.js for backend functionality.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa fa-solar-panel service-icon ii"></i>
+                <h3>Solar Rental Platform</h3>
+                <p>Built a solar energy website where people can rent solar equipment, implemented with JavaScript, PHP,
+                    MySQL, jQuery, and Bootstrap 5.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa fa-tools service-icon ii"></i>
+                <h3>Job & Repair Services Platform</h3>
+                <p>Created a web app connecting job seekers with employers and helping people find repair technicians,
+                    using JavaScript, PHP, MySQL, and Bootstrap.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fa fa-utensils service-icon ii"></i>
+                <h3>Restaurant Recruiter Portal</h3>
+                <p>Developed a specialized recruiter portal for one of Nigeria's major restaurant chains using
+                    JavaScript, PHP, MySQL, and Bootstrap.</p>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <i class="fa fa-globe service-icon ii"></i>
+                <h3>Business Website Development</h3>
+                <p>Built a new website for a well-known Nigerian business, implementing responsive design with
+                    JavaScript, PHP, and Bootstrap frameworks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience section -->
+    <section class="work-header" id="experience">
+        <div class="section-header">
+            <span class="slash">/</span>
+            <h2 class="work-title">Work <span>Experience</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="flex">
+            <div class="work-experience" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <div class="work-details">
+                    <div class="company-header">
+                        <h3>Luzoma Microsystems Technologies</h3>
+                        <span class="work-badge">Full Stack Web Developer</span>
+                    </div>
+                    <p class="work-duration">Nov 2024 – Present</p>
+
+                    <ul class="work-responsibilities">
+                        <li><span class="li-icon">▹</span> Built and maintained scalable web applications using HTML,
+                            CSS, JavaScript, PHP, and MySQL</li>
+                        <li><span class="li-icon">▹</span> Integrated frontend frameworks like React with backend REST
+                            APIs</li>
+                        <li><span class="li-icon">▹</span> Collaborated with cross-functional teams to design responsive
+                            UIs</li>
+                        <li><span class="li-icon">▹</span> Implemented secure authentication systems and admin
+                            dashboards</li>
+                        <li><span class="li-icon">▹</span> Used Git/GitHub and Agile methodologies for project
+                            management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="certification-section" id="certifications" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+        <div class="section-header">
+            <span class="slash">/</span>
+            <h2 class="section-title">My <span>Certifications</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="certification-container">
+            <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Coursera-Logo_600x600.svg"
+                        alt="Coursera Logo">
+                </div>
+                <div class="certification-details">
+                    <h3>IBM Certified Full Stack Developer</h3>
+                    <p class="certification-issuer">Coursera | Issued 2025</p>
+                    <div class="certification-skills">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Docker</span>
+                        <span>CI/CD</span>
+                    </div>
+                    <a href="javascript:void(0);" class="certification-link view-certificate">View Credential</a>
+                    <!-- Hidden image that will be shown in modal -->
+                    <div class="certificate-image-container" style="display:none;">
+                        <img src="CERTIFICATE_LANDING_PAGE~IEXZ0ZCH6IMG CAPSTONE.jpeg"
+                            alt="IBM Full Stack Developer Certificate">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="certificate-modal" id="certificateModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Certificate" class="modal-certificate-image">
+        </div>
+    </div>
+
+    <style>
+    .certification-section {
+        padding: 4rem 1.25rem;
+        background-color: var(--primary-dark);
+        max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1.25rem;
+    }
+
+    .slash {
+        color: #f2f2f2f2;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-right: 0.75rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin: 0 1rem 0 0;
+        color: #f2f2f2;
+    }
+
+    .section-title span {
+        color: #f2f2f2;
+    }
+
+    .line {
+        flex-grow: 1;
+        height: 1px;
+        background: linear-gradient(90deg, var(--text-color), #f2f2f2);
+    }
+
+    .certification-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+    }
+
+    .certification-card {
+        background: var(--card-bg);
+        color: var(--text-color);
+        border-radius: 1rem;
+        padding: 2.5rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 2.5rem;
+        align-items: flex-start;
+        border-left: 4px solid var(--text-color);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .certification-card:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    }
+
+    .certification-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        min-width: 7.5rem;
+    }
+
+    .certification-logo img {
+        height: 3.125rem;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .certification-details {
+        flex: 1;
+    }
+
+    .certification-details h3 {
+        font-size: 1.75rem;
+        color: var(--text-color);
+        margin: 0 0 0.625rem 0;
+        line-height: 1.3;
+    }
+
+    .certification-issuer {
+        color: var(--text-secondary);
+        font-weight: 500;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .certification-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .certification-skills span {
+        background: var(--skill-bg);
+        padding: 0.375rem 0.75rem;
+        border-radius: 1.25rem;
+        font-size: 0.85rem;
+        color: var(--text-color);
+        border: 1px solid var(--skill-border);
+        font-weight: 500;
+    }
+
+    .certification-link {
+        display: inline-block;
+        padding: 0.625rem 1.25rem;
+        border: 2px solid var(--text-color);
+        color: var(--text-color);
+        border-radius: 0.375rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+    .certification-link:hover {
+        background: var(--text-color);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* Modal Styles */
+    .certificate-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        overflow: auto;
+        animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 1.25rem;
+        width: 90%;
+        max-width: 56.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .modal-certificate-image {
+        max-width: 100%;
+        max-height: 80vh;
+        border: 2px solid var(--modal-border);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+        border-radius: 0.5rem;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: -2.5rem;
+        right: 0;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .close-modal:hover {
+        color: var(--text-color);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 992px) {
+        .certification-card {
+            padding: 2rem;
+            gap: 2rem;
+        }
+        
+        .certification-details h3 {
+            font-size: 1.5rem;
+        }
+        .certification-section{
+            padding: 2px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .certification-section {
+            padding: 3rem 1rem;
+        }
+        
+        .section-header {
+            margin-bottom: 2rem;
+        }
+        
+        .slash {
+            font-size: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.75rem;
+        }
+        
+        .certification-card {
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        
+        .certification-logo {
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            min-width: auto;
+        }
+        
+        .certification-logo img {
+            height: 2.5rem;
+        }
+        
+        .certification-details h3 {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+        .certification-issuer {
+            text-align: center;
+        }
+        
+        .certification-skills {
+            justify-content: center;
+        }
+        
+        .certification-link {
+            display: block;
+            text-align: center;
+        }
+        
+        .modal-content {
+            width: 95%;
+            padding: 0.75rem;
+        }
+        
+        .close-modal {
+            top: -2rem;
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .certification-section {
+            padding: 2.5rem 0.75rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+        }
+        
+        .certification-card {
+            padding: 1.25rem;
+        }
+        
+        .certification-details h3 {
+            font-size: 1.3rem;
+        }
+        
+        .certification-skills span {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.625rem;
+        }
+        
+        .certification-link {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+        
+        .close-modal {
+            top: -1.5rem;
+            font-size: 1.75rem;
+        }
+    }
+</style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get modal elements
+            const modal = document.getElementById('certificateModal');
+            const modalImg = document.querySelector('.modal-certificate-image');
+            const btn = document.querySelector('.view-certificate');
+            const span = document.querySelector('.close-modal');
+            const certificateImg = document.querySelector('.certificate-image-container img');
+
+            // When user clicks the button
+            btn.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = certificateImg.src;
+                modalImg.alt = certificateImg.alt;
+                document.body.style.overflow = "hidden";
+            }
+
+            // When user clicks on (x)
+            span.onclick = function () {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+
+            // When user clicks anywhere outside modal
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            }
+
+            // Close modal when pressing Escape key
+            document.addEventListener('keydown', function (event) {
+                if (event.key === "Escape" && modal.style.display === "block") {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            });
+        });
+    </script>
+
+
+
+    <footer class="portfolio-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                &copy; 2025 Gift Sunday Abeng. All rights reserved.
+            </div>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" aria-label="Dribbble" class="social-icon">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <a href="mailto:hello@giftsunday.com" class="contact-link">
+                    giftsunday34@gmail.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
