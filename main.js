@@ -79,7 +79,26 @@ window.addEventListener('load', animateOnScroll);
 // Start email animation when page loads
 // Start email animation when page loads
 // window.onload = typeEmail;
+// section when the button is clicked while loading the loader
+// Say Hi button interaction
+document.addEventListener('DOMContentLoaded', function () {
+    const sayHiBtn = document.querySelector('.say-hi-btn');
+    const sayHiText = sayHiBtn.querySelector('.say-hi-text');
+    const sayHiLoader = sayHiBtn.querySelector('.say-hi-loader');
 
+    sayHiBtn.addEventListener('click', function (e) {
+        sayHiText.style.display = 'none';
+        sayHiLoader.style.display = 'inline-block';
+        // Delay mailto for a longer time (e.g., 1.5 seconds)
+        setTimeout(() => {
+            window.location.href = sayHiBtn.getAttribute('href');
+            sayHiText.style.display = '';
+            sayHiLoader.style.display = 'none';
+        }, 1500);
+        // Prevent default so we can show loader first
+        e.preventDefault();
+    });
+});
 
 // project script section
 // Scroll animation for projects section
